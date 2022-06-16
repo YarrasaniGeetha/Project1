@@ -74,9 +74,14 @@
                 </div>
                 <p id="number">24</p>
               </div>
-              <div>
+              <div class="Image_check">
                 <img src="/images/check-circle.svg" alt="check-circle" />
-              </div>
+              
+              <!-- <span class="caurosal">
+              <img src="/images/caurosal.svg" alt="Caurosal icon">
+              <span aria-label="Next slide" class="nav next" role="button"></span>
+              </span> -->
+            </div>
             </div>
             <div class="action">
               <div>
@@ -147,6 +152,10 @@
                 <img src="/images/Group 33741.svg" alt="Inbound-icon" />
               </div>
             </div>
+            <div class="action_Caurosal">
+              <span aria-label="Next slide" class="nav next" role="button"></span>
+            </div>
+            
           </div>
         </div>
       <div class="Contents">
@@ -162,6 +171,9 @@
               View all shipments
               <img src="/images/Group 33759.svg" alt="Vector icon" />
             </div>
+             <div class="view_all">View all
+              <img src="/images/Group 33759 (1).svg" alt="Vector icon" />
+             </div>
             </div>
           <div class="options">
             <div class="options_list">
@@ -183,21 +195,21 @@
               On Time <span class="text_style">(7)</span>
             </div>
           </div>
-          <div class="search_bar">
+          <div class="search_bar" id="search" onkeyup="searchFun()">
             <img src="/images/Group 33795.svg" alt="search icon" />
-            <div class="search_input_box">
-              Search by: Shipment ID, Origin, Destination, Product Category,
-              Vendor
-            </div>
+            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+            <input class="search_input_box" id="input_search" placeholder="&nbsp;&nbsp;Search by: Shipment ID, Origin, Destination, Product Category,Vendor">
+            
+            <input class="search_input" placeholder="&nbsp;&nbsp;Search">
           </div>
         </div>
         
-        <div class="shipment_cards">
+        <div class="shipment_cards" id="card_shipment">
           <div class="wrapper">
             <div class="wrapper_header">
             <div class="shipment_id">
               <p>Shipment ID</p>
-              <p>109669449</p>
+              <p id="s_number">109669449</p>
             </div>
             <div class="header_icons">
               <img src="/images/Group 33891.svg" alt="Global icon">
@@ -226,6 +238,7 @@
                 </div>
               </div>
             </div>
+            <div class="details">
             <div class="Shipment_planned_details">
               <div class="planned">
                 <p>PO#</p>
@@ -246,6 +259,7 @@
                 <p>Jan 31, 2021 10:17 PM EST</p>
               </div>
               
+            </div>
             </div>
             <div class="shipment_logo_images">
               <img src="/images/icon_Fire.svg" alt="Fire Icon">
@@ -292,6 +306,7 @@
                 </div>
               
             </div>
+            <div class="details">
             <div class="Shipment_planned_details">
               <div class="planned">
                 <p>PO#</p>
@@ -312,6 +327,7 @@
                 <p>Jan 31, 2021 10:17 PM EST</p>
               </div>
               
+            </div>
             </div>
             <div class="shipment_logo_images">
               <img src="/images/icon_Fire.svg" alt="Fire Icon">
@@ -361,6 +377,7 @@
                 </div>
               </div>
             </div>
+            <div class="details">
             <div class="Shipment_planned_details">
               <div class="planned">
                 <p>PO#</p>
@@ -381,6 +398,7 @@
                 <p>Jan 31, 2021 10:17 PM EST</p>
               </div>
               
+            </div>
             </div>
             <div class="shipment_logo_images">
               <img src="/images/icon_Fire.svg" alt="Fire Icon">
@@ -424,6 +442,7 @@
                 </div>
               </div>
             </div>
+            <div class="details">
             <div class="Shipment_planned_details">
               <div class="planned">
                 <p>PO#</p>
@@ -444,6 +463,7 @@
                 <p>Jan 31, 2021 10:17 PM EST</p>
               </div>
               
+            </div>
             </div>
             <div class="shipment_logo_images">
               <img src="/images/icon_Fire.svg" alt="Fire Icon">
@@ -468,5 +488,7 @@
         </div>
       </section>
     </div>
+    <script src="index.js"></script>
   </body>
+  
 </html>
